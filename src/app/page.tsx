@@ -1,10 +1,9 @@
-import { Typography } from '@mui/material';
+import { ServersMenu } from '@/components/ServersMenu';
 
 export default function Home() {
   return (
     <main>
-      <h1> Hola Amiguitos</h1>
-      <Typography variant='h1'> Hola Amiguitos MUI </Typography>
+      <ServersMenu />
     </main>
   );
 }
