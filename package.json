@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "npx prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -17,10 +19,15 @@
     "@types/react-dom": "18.2.7",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
+    "husky": "^8.0.3",
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.2.2",
     "zustand": "^4.4.1"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.0.3"
   }
 }

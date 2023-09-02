@@ -1,35 +1,35 @@
-"use client";
+'use client';
 
-import { createTheme, responsiveFontSizes } from "@mui/material";
+import { createTheme, responsiveFontSizes } from '@mui/material';
 
 export const theme = createTheme({
   palette: {
     primary: {
-      main: "rgb(49, 51, 56)",
+      main: 'rgb(49, 51, 56)',
     },
     secondary: {
-      main: "rgb(43, 45, 49)",
+      main: 'rgb(43, 45, 49)',
     },
     dark: {
-      main: "rgb(30, 31, 34)",
+      main: 'rgb(30, 31, 34)',
     },
     light: {
-      main: "rgb(78, 80, 88)",
+      main: 'rgb(78, 80, 88)',
     },
     bg: {
-      background: "rgb(49, 51, 56)",
+      background: 'rgb(49, 51, 56)',
     },
     custom: {
-      main: "rgb(49, 51, 56)",
-      sec: "rgb(181, 186, 193)",
-      white: "rgb(242, 243, 245)",
-      green: "rgb(35, 165, 89)",
-      line: "rgb(49, 51, 56)",
-      grey: "rgb(219, 222, 225)",
+      main: 'rgb(49, 51, 56)',
+      sec: 'rgb(181, 186, 193)',
+      white: 'rgb(242, 243, 245)',
+      green: 'rgb(35, 165, 89)',
+      line: 'rgb(49, 51, 56)',
+      grey: 'rgb(219, 222, 225)',
     },
   },
   typography: {
-    fontFamily: "inherit",
+    fontFamily: 'inherit',
     fontSize: 16,
   },
   components: {
@@ -40,11 +40,11 @@ export const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          boxShadow: "none",
-          color: "#fff",
-          fontWeight: "600",
-          "&:hover": {
-            boxShadow: "none",
+          boxShadow: 'none',
+          color: '#fff',
+          fontWeight: '600',
+          '&:hover': {
+            boxShadow: 'none',
           },
         },
       },
@@ -52,35 +52,35 @@ export const theme = createTheme({
     MuiTextField: {
       styleOverrides: {
         root: {
-          borderRadius: "55px",
-          background: "#fff",
-          fontWeight: "600",
-          color: "#000",
+          borderRadius: '55px',
+          background: '#fff',
+          fontWeight: '600',
+          color: '#000',
         },
       },
     },
     MuiTypography: {
       styleOverrides: {
         body1: {
-          fontSize: "18px",
-          fontWeight: "500",
+          fontSize: '18px',
+          fontWeight: '500',
         },
       },
     },
     MuiBadge: {
       styleOverrides: {
         colorSecondary: {
-          color: "#fff",
+          color: '#fff',
         },
       },
     },
     MuiChip: {
       styleOverrides: {
         filled: {
-          color: "#fff",
+          color: '#fff',
         },
         outlined: {
-          color: "#fff",
+          color: '#fff',
         },
       },
     },
@@ -89,7 +89,7 @@ export const theme = createTheme({
 
 export const responsiveTheme = responsiveFontSizes(theme);
 
-declare module "@mui/material/styles" {
+declare module '@mui/material/styles' {
   interface Palette {
     dark: {
       main: string;
