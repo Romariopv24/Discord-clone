@@ -1,8 +1,9 @@
+import { ServersMenu } from '@/components/ServersMenu';
+import { responsiveTheme } from '@/theme/theme';
 import { ThemeProvider } from '@mui/material';
-import './globals.css';
 import type { Metadata } from 'next';
 import { Noto_Sans } from 'next/font/google';
-import { responsiveTheme } from '@/theme/theme';
+import './globals.css';
 
 const noto_sans = Noto_Sans({
   subsets: ['latin'],
@@ -19,7 +20,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='en'>
       <body className={noto_sans.className}>
-        <ThemeProvider theme={responsiveTheme}>{children}</ThemeProvider>
+        <ThemeProvider theme={responsiveTheme}>
+          <>
+            <ServersMenu />
+            {children}
+          </>
+        </ThemeProvider>
       </body>
     </html>
   );
