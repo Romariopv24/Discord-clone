@@ -2,6 +2,7 @@ import { Add, Explore } from '@mui/icons-material';
 import { Stack, SxProps, Typography } from '@mui/material';
 
 import { ServersOptions } from './ServersOptions';
+import { ListLayout } from './channelsLayout/ListLayout';
 
 export interface ServerMenuI {
   name: string;
@@ -73,6 +74,7 @@ export async function ServersMenu() {
         </Typography>
 
         <ServersOptions serverMenu={serverMenu} serverOptions={serverOptions} />
+        <ListLayout />
       </Stack>
     </>
   );

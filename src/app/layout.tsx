@@ -1,6 +1,6 @@
 import { ServersMenu } from '@/components/ServersMenu';
 import { responsiveTheme } from '@/theme/theme';
-import { ThemeProvider } from '@mui/material';
+import { Stack, ThemeProvider } from '@mui/material';
 import type { Metadata } from 'next';
 import { Noto_Sans } from 'next/font/google';
 import './globals.css';
@@ -21,10 +21,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='en'>
       <body className={noto_sans.className}>
         <ThemeProvider theme={responsiveTheme}>
-          <>
+          <Stack direction={'row'}>
             <ServersMenu />
+
             {children}
-          </>
+          </Stack>
         </ThemeProvider>
       </body>
     </html>

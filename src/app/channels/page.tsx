@@ -1,10 +1,9 @@
-import { ServersMenu } from '@/components/ServersMenu';
+import { ListLayout } from '@/components/channelsLayout/ListLayout';
 
 export default function Channels() {
   return (
     <>
-      <ServersMenu />
-      ddssdf
+      <ListLayout />
     </>
   );
 }
